@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171615;
+    color: #f5ead8;
+    font-family: Georgia, serif;
+    padding: 30px 15px;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 1px solid #c6a269;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #101010;
+}
+
+header h1 {
+    color: #dfbd85;
+    font-size: clamp(32px, 5vw, 55px);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+header p:first-of-type {
+    color: #dfbd85;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+header p:last-of-type {
+    color: #cbb58f;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    background-color: #101010;
+}
+
+section h2 {
+    color: #dfbd85;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section > p {
+    text-align: center;
+    color: #bcb5ab;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #302517;
+    color: #e4c18c;
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+    border-bottom: 1px solid #57452e;
+}
+
+th {
+    font-size: 17px;
+}
+
+td {
+    line-height: 1.5;
+}
+
+td img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+td:last-child {
+    color: #e4c18c;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+tbody tr:hover {
+    background-color: #211d17;
+}
+
+footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 10px;
+    text-align: center;
+    border-top: 1px solid #c6a269;
+    background-color: #101010;
+    color: #cbb58f;
+}
+
+footer p + p {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.category th {
+    background-color: #302517;
+    color: #dfbd85;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 18px;
+    border-top: 2px solid #c6a269;
+    border-bottom: 1px solid #c6a269;
+}
+
+.category:hover {
+    background-color: transparent;
+}
+
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px 8px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+        overflow-wrap: anywhere;
+    }
+
+    td img {
+        width: 65px;
+        height: 55px;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+    }
+}
